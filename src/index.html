@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <title>Tetris</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__game">
+            <canvas width="320" height="640" id="game"></canvas>
+            <div id="dashboard">
+                <div class="btns__direction">
+                    <button class="btn" id="btn-left">
+                        <img src="./assets/img/left.svg" alt="left" class="btn__img">
+                    </button>
+                    <button class="btn" id="btn-down">
+                        <img src="./assets/img/down.svg" alt="down" class="btn__img">
+                    </button>
+                    <button class="btn" id="btn-right">
+                        <img src="./assets/img/right.svg" alt="right" class="btn__img">
+                    </button>
+                </div>
+                <button class="btn" id="btn-rotate">
+                    <img src="./assets/img/rotate.svg" alt="rotate" class="btn__img">
+                </button>
+                <div class="btns__game">
+                    <button class="btn btn__pause" id="btn-pause">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                    <button class="btn" id="btn-restart">
+                        <img src="./assets/img/restart.svg" alt="restart" class="btn__img">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container__score">
+            <span class="score__txt">SCORE:</span>
+            <span class="score__txt" id="score">0</span>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
